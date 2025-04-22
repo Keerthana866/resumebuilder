@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    h1 { font-size: 24px; margin-bottom: 10px; }
+    h2 { font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-bottom: 1px solid #ccc; }
+    p, li { font-size: 14px; line-height: 1.5; }
+    .section { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1><%= name %></h1>
+  <p><%= email %></p>
+  
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+      <% education.forEach(item => { %>
+        <li><%= item %></li>
+      <% }) %>
+    </ul>
+  </div>
+  
+  <div class="section">
+    <h2>Experience</h2>
+    <ul>
+      <% experience.forEach(item => { %>
+        <li><%= item %></li>
+      <% }) %>
+    </ul>
+  </div>
+  
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <% skills.forEach(skill => { %>
+        <li><%= skill %></li>
+      <% }) %>
+    </ul>
+  </div>
+</body>
+</html>
