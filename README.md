@@ -20,6 +20,6 @@ A professional Node.js web application that allows users to create and download 
 
 ```bash
 git clone https://github.com/Keerthana866/resumebuilder
-cd resume-builder
+cd resumebuilder
 npm install
 npm start
